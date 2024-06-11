@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp.ManageCustomerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="ManageCustomerWindow" Height="450" Width="800">
+    <Canvas>
+        <Grid Height="145" Width="780" Canvas.Left="10" Canvas.Top="279" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <DataGrid x:Name="dtGridCustomer" d:ItemsSource="{d:SampleData ItemCount=5}" Height="135" VerticalAlignment="Top" Margin="-10,0,10,0" SelectionChanged="dtGridCustomer_SelectionChanged"/>
+
+        </Grid>
+        <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Manage Customer" Canvas.Top="10" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="txtID" Canvas.Left="105" TextWrapping="Wrap" Text="" Canvas.Top="57" Width="166" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="CustomerID" Canvas.Top="59" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtName" Canvas.Left="105" TextWrapping="Wrap" Text="" Canvas.Top="102" Width="166" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="FullName" Canvas.Top="104" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPhone" Canvas.Left="105" TextWrapping="Wrap" Text="" Canvas.Top="150" Width="166" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Telephone" Canvas.Top="152" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEmail" Canvas.Left="105" TextWrapping="Wrap" Text="" Canvas.Top="199" Width="166" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Email" Canvas.Top="201" HorizontalAlignment="Left" VerticalAlignment="Center" Width="51"/>
+        <TextBox x:Name="txtBithday" Canvas.Left="400" TextWrapping="Wrap" Text="" Canvas.Top="57" Width="166" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Canvas.Left="317" TextWrapping="Wrap" Text="Birthday" Canvas.Top="59" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtStatus" Canvas.Left="400" TextWrapping="Wrap" Text="" Canvas.Top="102" Width="166" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Canvas.Left="317" TextWrapping="Wrap" Text="Status" Canvas.Top="104" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPassword" Canvas.Left="400" TextWrapping="Wrap" Text="" Canvas.Top="148" Width="166" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Canvas.Left="317" TextWrapping="Wrap" Text="Password" Canvas.Top="150" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="ADD" Canvas.Left="172" Canvas.Top="247" Height="27" Width="69" Click="Button_Click"/>
+        <Button x:Name="btnUpdate" Content="UPDATE" Canvas.Left="317" Canvas.Top="247" Height="27" Width="69" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnUpdate_Click"/>
+        <Button x:Name="btnDelete" Content="DELETE" Canvas.Left="448" Canvas.Top="247" Height="27" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnDelete_Click"/>
+    </Canvas>
+</Window>

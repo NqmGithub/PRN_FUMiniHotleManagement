@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp.ListRoomWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="ListRoomWindow" Height="471" Width="800">
+    <Canvas Margin="0,0,5,0" Height="435" VerticalAlignment="Top">
+        <DataGrid x:Name="RoomDataGrid" Height="428" Width="345" AutoGenerateColumns="False" d:ItemsSource="{Binding rooms}" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="450" Canvas.Top="7" SelectionChanged="DataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Room Number" Binding="{Binding RoomNumber}" />
+                <DataGridTextColumn Header="Max capacity" Binding="{Binding RoomMaxCapacity}" />
+                <DataGridTextColumn Header="Price" Binding="{Binding RoomPricePerDay}" />
+                <DataGridTextColumn Header="Status" Binding="{Binding RoomStatus}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="BOOK" Canvas.Left="246" Canvas.Top="396" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="172" FontSize="18" FontWeight="Bold" Click="Button_Click"/>
+        <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Room Booking" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
+        <TextBlock Canvas.Left="25" TextWrapping="Wrap" Text="Room Number" Canvas.Top="51" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRoomNumber" Canvas.Left="166" TextWrapping="Wrap" Canvas.Top="49" Width="252" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock Canvas.Left="25" TextWrapping="Wrap" Text="Max Capacity" Canvas.Top="89" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCapacity" Canvas.Left="166" TextWrapping="Wrap" Canvas.Top="87" Width="252" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock Canvas.Left="25" TextWrapping="Wrap" Text="Type" Canvas.Top="149" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtType" Canvas.Left="166" TextWrapping="Wrap" Canvas.Top="127" Width="252" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock Canvas.Left="25" TextWrapping="Wrap" Canvas.Top="167" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"><Run Text="Price per day"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="txtPrice" Canvas.Left="166" TextWrapping="Wrap" Canvas.Top="165" Width="252" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock Canvas.Left="25" TextWrapping="Wrap" Canvas.Top="209" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top" Text="Description"/>
+        <TextBox x:Name="txtDescription" Canvas.Left="166" TextWrapping="Wrap" Canvas.Top="207" Width="252" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50"/>
+        <TextBlock Canvas.Left="25" TextWrapping="Wrap" Canvas.Top="283" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top" Text="Status"/>
+        <TextBox x:Name="txtStatus" Canvas.Left="166" TextWrapping="Wrap" Canvas.Top="281" Width="252" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock Canvas.Left="25" TextWrapping="Wrap" Canvas.Top="323" FontSize="16" Text="Start date" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBox x:Name="txtStart" Canvas.Left="166" TextWrapping="Wrap" Canvas.Top="321" Width="252" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock Canvas.Left="25" TextWrapping="Wrap" Canvas.Top="361" FontSize="16" Text="End date" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txtEnd" Canvas.Left="166" TextWrapping="Wrap" Canvas.Top="359" Width="252" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+    </Canvas>
+</Window>

@@ -1,0 +1,17 @@
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.runtimeconfig.json
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\bin\Debug\net8.0\BusinessObjects.dll
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\bin\Debug\net8.0\BusinessObjects.pdb
+D:\c#prn\FUMiniHotelSystem\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CopyComplete
