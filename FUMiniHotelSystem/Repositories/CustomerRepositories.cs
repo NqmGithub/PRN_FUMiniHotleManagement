@@ -10,10 +10,11 @@ namespace Repositories
 {
     public class CustomerRepositories : ICustomerRepositories
     {
-        private readonly FuminiHotelManagementContext _context = new FuminiHotelManagementContext();
+        private readonly FuminiHotelManagementContext _context;
 
         public CustomerRepositories()
         {
+            _context = new FuminiHotelManagementContext();
         }
 
         public void AddCustomer(Customer customer)

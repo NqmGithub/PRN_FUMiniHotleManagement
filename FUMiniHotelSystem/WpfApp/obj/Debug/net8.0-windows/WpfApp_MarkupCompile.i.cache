@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\c#prn\FUMiniHotelSystem\WpfApp\App.xaml
-6-471234333
+7-1598835339
 
-14-1091171617
+15-718216721
 24277450076
-BookDetailsWindow.xaml;ListRoomWindow.xaml;LoginWindow.xaml;ManageCustomerWindow.xaml;ManageRoomWindow.xaml;ManagerWindow.xaml;
+BookDetailsWindow.xaml;ListRoomWindow.xaml;LoginWindow.xaml;ManageCustomerWindow.xaml;ManageRoomWindow.xaml;ManagerWindow.xaml;ReportWindow.xaml;
 
-False
+True
 

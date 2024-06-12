@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="ManagerWindow" Height="450" Width="800">
     <Canvas>
-        <Button Content="Manage Customer" Canvas.Left="108" Canvas.Top="122" Height="51" Width="211" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button Content="Manage Room" Canvas.Left="486" Canvas.Top="122" Height="51" Width="211" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Button_Click_1"/>
+        <Button x:Name="btnCustomer" Content="Manage Customer" Canvas.Left="108" Canvas.Top="122" Height="51" Width="211" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button x:Name="btnRoom" Content="Manage Room" Canvas.Left="486" Canvas.Top="122" Height="51" Width="211" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Button_Click_1"/>
+        <Button x:Name="btnReport" Content="Manage Report" Canvas.Left="294" Canvas.Top="267" Height="51" Width="212" FontSize="20" Click="btnReport_Click" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
     </Canvas>
 </Window>

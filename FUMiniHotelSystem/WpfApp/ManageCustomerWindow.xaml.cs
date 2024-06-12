@@ -1,7 +1,10 @@
 ﻿using BusinessObjects;
+using DataAccessLayer;
+using Microsoft.EntityFrameworkCore;
 using Services;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +25,7 @@ namespace WpfApp
     public partial class ManageCustomerWindow : Window
     {
         private readonly CustomerService customerService;
+        private FuminiHotelManagementContext _context = new FuminiHotelManagementContext();
         public ManageCustomerWindow()
         {
             InitializeComponent();
@@ -45,7 +49,7 @@ namespace WpfApp
                 txtEmail.Text = selected.EmailAddress.ToString();
                 txtBithday.Text = selected.CustomerBirthday.ToString();
                 txtStatus.Text = selected.CustomerStatus.ToString();
-                txtPassword.Text = selected.Password.ToString();
+                txtPassword.Text = selected.Password;
             }
         }
 
@@ -68,6 +72,7 @@ namespace WpfApp
             finally
             {
                 LoadData();
+                ResetInputFields();
             }
         }
 
@@ -75,14 +80,18 @@ namespace WpfApp
         {
             try
             {
-                Customer cus = new Customer();
-                cus.CustomerId = int.Parse(txtID.Text);
-                cus.CustomerFullName = txtName.Text;
-                cus.EmailAddress = txtEmail.Text;
-                cus.CustomerBirthday = DateOnly.Parse(txtBithday.Text);
-                cus.CustomerStatus = byte.Parse(txtStatus.Text);
-                cus.Telephone = txtPhone.Text;
-                customerService.Update(cus);
+                Customer cus = customerService.Get(int.Parse(txtID.Text));
+                if(cus != null)
+                {
+                    cus.CustomerId = int.Parse(txtID.Text);
+                    cus.CustomerFullName = txtName.Text;
+                    cus.EmailAddress = txtEmail.Text;
+                    cus.CustomerBirthday = DateOnly.Parse(txtBithday.Text);
+                    cus.CustomerStatus = byte.Parse(txtStatus.Text);
+                    cus.Telephone = txtPhone.Text;
+                    _context.SaveChanges();
+                }
+                
             }
             catch (Exception ex)
             {
@@ -91,6 +100,7 @@ namespace WpfApp
             finally
             {
                 LoadData();
+                ResetInputFields();
             }
         }
 
@@ -107,7 +117,26 @@ namespace WpfApp
             finally
             {
                 LoadData();
+                ResetInputFields();
             }
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            ManagerWindow managerWindow = new ManagerWindow();
+            managerWindow.Show();
+            this.Close();
+        }
+
+        private void ResetInputFields()
+        {
+            txtID.Text = string.Empty;
+            txtName.Text = "";
+            txtBithday.Text = "";
+            txtEmail.Text = "";
+            txtPassword.Text = "";
+            txtStatus.Text = string.Empty;
+            txtPhone.Text = string.Empty;
         }
     }
 }

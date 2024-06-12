@@ -150,3 +150,5 @@ D:\c#prn\FUMiniHotelSystem\WpfApp\bin\Debug\net8.0-windows\DataAccessLayer.pdb
 D:\c#prn\FUMiniHotelSystem\WpfApp\bin\Debug\net8.0-windows\Repositories.pdb
 D:\c#prn\FUMiniHotelSystem\WpfApp\obj\Debug\net8.0-windows\ManagerWindow.g.cs
 D:\c#prn\FUMiniHotelSystem\WpfApp\obj\Debug\net8.0-windows\ManagerWindow.baml
+D:\c#prn\FUMiniHotelSystem\WpfApp\obj\Debug\net8.0-windows\ReportWindow.g.cs
+D:\c#prn\FUMiniHotelSystem\WpfApp\obj\Debug\net8.0-windows\ReportWindow.baml

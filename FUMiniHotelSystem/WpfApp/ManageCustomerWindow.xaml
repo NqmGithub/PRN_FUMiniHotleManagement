@@ -29,5 +29,6 @@
         <Button Content="ADD" Canvas.Left="172" Canvas.Top="247" Height="27" Width="69" Click="Button_Click"/>
         <Button x:Name="btnUpdate" Content="UPDATE" Canvas.Left="317" Canvas.Top="247" Height="27" Width="69" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnUpdate_Click"/>
         <Button x:Name="btnDelete" Content="DELETE" Canvas.Left="448" Canvas.Top="247" Height="27" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnDelete_Click"/>
+        <Button x:Name="btnBack" Content="Back" Canvas.Left="712" Canvas.Top="17" Height="24" Width="62" Click="btnBack_Click" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Canvas>
 </Window>
